@@ -5,6 +5,10 @@ function App() {
   const submitForm = (event) => {
     event.preventDefault();
     // Create a FormData object from the form
+    console.log(event.target['name'].value, 'name')
+    console.log(event.target['email'].value, 'Email');
+    console.log(event.target['message'].value, 'Message');
+
     const formData = new FormData(event.target);
 
     // Convert to a plain object (optional)
