@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+.progress {
+    height: 10px;
+    width: 100%;
+    background-color: #c2c2c2;
+    margin-top: 10px;
+}
+
+.bar {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    animation-name: bar;
+    animation-duration: 2s;
+}
+
+@keyframes bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
